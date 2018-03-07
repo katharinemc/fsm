@@ -1,0 +1,88 @@
+body {
+	background-color: gray;
+}
+
+.portcontent {
+		padding-top: 15%;
+}
+
+.navbar:nth-of-type(1) {
+	margin-bottom: 1%;
+}
+
+
+.thumbnail:nth-child(3) {
+	margin-left: 1%;
+	margin-right: 1%;
+	background-color: pink;
+
+}
+
+.logo {
+padding-top: 0;
+    padding-left: 3%;
+
+}
+
+
+.content{
+	padding-top: 15%;
+	margin-left: 5%;
+}
+
+.arrow {
+		padding-top: 25%;
+		margin-left: 3%;
+
+
+}
+
+.about p {
+  font-size: 1.5em;
+}
+
+
+.navbar-header {
+  float: none;
+}
+.navbar-left,.navbar-right {
+  float: none !important;
+}
+.navbar-toggle {
+  display: block;
+}
+.navbar-collapse {
+  border-top: 1px solid transparent;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+}
+.navbar-fixed-top {
+  top: 0;
+  border-width: 0 0 1px;
+}
+.navbar-collapse.collapse {
+  display: none!important;
+}
+.navbar-nav {
+  float: none!important;
+  margin-top: 7.5px;
+}
+.navbar-nav>li {
+  float: none;
+}
+.navbar-nav>li>a {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.collapse.in{
+  display:block !important;
+}
+
+.arrow a {
+	color: white;
+
+}
+
+.arrow a:hover {
+	color: black;
+}
+
