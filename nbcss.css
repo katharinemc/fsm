@@ -3,7 +3,22 @@
 }
 
 body {
-	font-family: sans-serif;
+font-family: 'Montserrat', sans-serif;
+	background-color: #e8ddb5;
+	margin: 0;
+	padding: 0;
+}
+
+button {
+	background-color: 	#92b6b1;
+	padding: 5%;
+	border-radius: 15px;
+	border: black;
+	display: block;
+	margin: 5% auto;
+	text-align: center;
+	font-size: 3em;
+	 box-shadow: 2px 5px;
 }
 
 .container {
@@ -11,30 +26,86 @@ body {
 	padding: 3%;
 }
 
-nav {
-	height: 70px;
-	background-color: pink;
+
+.sectionheader {
+	font-style: italic;
+	text-align: right;
+	color: lightgray;
+	background-color: 	#788aa3;
+	padding: 3%;
+		font-family: 'Lora', serif;
 }
 
-p {
 
-/*	padding-top: 5%;*/
+h1, h1 {
+	font-family: 'Lora', serif;
 }
 
 hr {
+
 	margin: 5%;
+	color: 	#788aa3;
+
 }
 
-.contact {
-	background-color: pink;
-	padding: 5%;
-	border-radius: 15px;
-	display: block;
-	margin: 5% auto;
-	text-align: center;
-}
+/*.icon {
+	font-size: 5px;
+}*/
 
 img {
-	width: 100%;
+	width: 49%;
+	height: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    display: inline;
 }
 
+
+.menu-btn{
+	float: right;
+	display: inline;
+	line-height: 1.2;
+	font-size: 18px;
+	font-weight: 200;
+	vertical-align: middle;
+	z-index: 99;
+		padding: 5px;
+	border-radius: 5px;
+	border: 1px solid white;
+		font-size: 1em;		
+
+}
+
+nav {
+	color: lightgray;
+	background-color: #666a86;
+	padding: 1%;
+	margin: 0;
+
+}
+
+nav ul {
+
+  list-style-type: none;
+
+}
+
+nav h1 {	display: inline;
+
+}
+
+
+p {
+	margin: 0, auto;
+}
+.responsive-menu{
+	display: none;
+}
+
+.expand {
+	display: block !important; 
+}
+
+
+/*http://www.color-hex.com/color-palette/21738*/

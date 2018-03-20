@@ -3,63 +3,85 @@
 <head>
 	<title>KMC Codes</title>
 	<link rel="stylesheet" type="text/css" href="nbcss.css">
-
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript">
+	jQuery(function($){
+    	     $( '.menu-btn' ).click(function(){
+    	     $('.responsive-menu').toggleClass('expand')
+    	     })
+        })
+</script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/solid.js" integrity="sha384-+Ga2s7YBbhOD6nie0DzrZpJes+b2K1xkpKxTFFcx59QmVPaSA8c7pycsNaFwUK6l" crossorigin="anonymous"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js" integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c" crossorigin="anonymous"></script>
 </head>
+
+<link href="https://fonts.googleapis.com/css?family=Lora|Montserrat:400,700" rel="stylesheet">
 <body>
 
-<nav> <!-- Hamburger goes here --></nav>
-<div class="container">
+<nav> <!-- Hamburger goes here -->
+	<div class="mobile-nav">
+		<h1>KRM Design</h1>
+	     <div class="menu-btn" id="menu-btn">
+			<div class="icon">
+			<i class="fas fa-bars fa-3x"></i>
+			</div>
+	     </div>
+
+	     <div class="responsive-menu">
+	        <ul>
+	           <li>Services</li>
+	           <li>About</li>
+	           <li>Portfolio</li>
+	        </ul>
+	     </div>
+	</div>
+</nav>
+
 
 <main>
-	<section id="#home">
-	<h1>Best practices 21st century web-design for small businesses</h1>
-
-	<p>A successful website generates more than hits: it generates leads, customers, clients, donors.</p>
-	 <p>It does that by initiating a <strong>relationship</strong> between your organization and real people on the other side of the screen who have found you online.</p>
-	 <p>We get the conversation off on the right foot.</p>
-
-	 <hr>
-
-
-
+	<h2 class="sectionheader">What we Build</h2>
+	<section class ="container"id="#home">
+		<p class="quote">"Best practices 21st century web-design."</p>
+		<p>A successful website generates more than hits: it generates leads, customers, clients, donors.</p>
+		 <p>It does that by initiating a <strong>relationship</strong> between your organization and real people on the other side of the screen who have found you online.</p>
+		 <p>We get the conversation off on the right foot.</p>
 	</section>
-	<h1>Services</h1>
+
+	<h2 class="sectionheader">Services</h2>
 	
-	<p> Why mobile first? Over half of all website traffic starts on a mobile device, like a cell phone or a tablet - you need a great mobile welcome mat for your buisness.
-	<p> Why custom? Your website is as unique as your business.  Whether you need built-in eCommerce, blog functionality, or a static brochure website TKTK</p>
+	<section class="container">
+		<p>Over half of all website traffic starts on a mobile device, like a cell phone or a tablet, which means that a website that looks professional from the smallest to the largest screens - a great mobile welcome mat for your buisness.
+		<p> Why custom? Your website is as unique as your business.  Whether you need built-in eCommerce, blog functionality, or a static brochure website TKTK</p>
+			<form>
+				<a href="mailto:someone@example.com?Subject=Hi%20Katharine%20-%20let's%20talk%20about%20my%20project!"><button class="contact"><p>Let's Talk!</p></button></a>
+			</form>
+		<p>We have a special passion for helping small-businesses with too-small budgets and scrappy non-profits who need better websites than they can afford. We want to find a way to work with you.</p>
+	</section>
+	
 
-	<div class="contact"><p>Contact us!</p> <p>Free consultation and quote</p></div>
+	<h2 class="sectionheader">About</h2>
 
-	<p>We have a special passion for helping small-businesses with too-small budgets and scrappy non-profits who need better websites than they can afford. We want to find a way to work with you.</p>
+	<section class="container">
+	<p><strong>Katharine McLeod</strong> is a story-teller, web developer, and Thinkful student (Cohort 20). Whether working on your project solo, or as a part of your existing development team, she brings your project in-depth knowledge of web technologies like HTML5, CSS, Javascript and a customer first focus.  When she's not coding, she's in the kitchen fawning over her InstantPot.</p>
+	</section>
 
-	<hr>
+	<h2 class="sectionheader">Portfolio</h2>
+	
+	<section class="container">
+		<div class="bna">
+			<img src="https://images.unsplash.com/photo-1518536430288-a540518a0681?ixlib=rb-0.3.5&s=6baf3bf5ce48403beb	400047d9bbf257&auto=format&fit=crop&w=1950&q=80" alt="before">
+			<img src ="https://images.unsplash.com/photo-1519001112248-fbd7b9b8df52?ixlib=rb-0.3.5&s=5adba22fd7a90561b2132548d7c1dcfc&auto=format&fit=crop&w=967&q=80" alt="after">
+			<h6>Caption 1</h6>
+		</div>
+	</section>
 
-<section>
-	<h1>About</h1>
-	<p><strong>Katharine McLeod</strong> is a story-teller and web developer.  She brings your project in-depth knowledge of web technologies like HTML5, CSS, Javascript and a customer first focus</p>
-	<hr>
-</section>
+<footer  class="sectionheader">
 
-<section>
-<h1>Portfolio</h1>
-
-			<img src="https://images.unsplash.com/photo-1518536430288-a540518a0681?ixlib=rb-0.3.5&s=6baf3bf5ce48403beb	400047d9bbf257&auto=format&fit=crop&w=1950&q=80"><br></a>
-			<h6>Caption Two</h6>
-
-			<img src="https://images.unsplash.com/photo-1518536430288-a540518a0681?ixlib=rb-0.3.5&s=6baf3bf5ce48403beb	400047d9bbf257&auto=format&fit=crop&w=1950&q=80"><br></a>
-			<h6>Caption Two</h6>
-			<img src="https://images.unsplash.com/photo-1518536430288-a540518a0681?ixlib=rb-0.3.5&s=6baf3bf5ce48403beb	400047d9bbf257&auto=format&fit=crop&w=1950&q=80"><br></a>
-			<h6>Caption Two</h6>
-
-</section>
-
-<footer>
-
-<a href="#home"><strong> ^^^</strong></a>
+Contact info, github icons, etc etc. etc.
 
 </footer>
 
-</div>
+</main>
 
 </body>
 </html>
