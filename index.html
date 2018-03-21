@@ -1,69 +1,103 @@
 <!DOCTYPE html>
-<html>
+<htm lang="en">
 <head>
-	<title>Full Stack McLeod</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="fsmframe.css">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-	<script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+	<title>KMC Codes</title>
+	<link rel="stylesheet" type="text/css" href="nbcss.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+
+<!-- Hamburger Code -->
+
+<script type="text/javascript">
+	jQuery(function($){
+    	     $( '.menu-btn' ).click(function(){
+    	     $('.responsive-menu').toggleClass('expand')
+    	     })
+        })
+</script>
+
+<!-- Font Awesome -->
+	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
+
 </head>
+
+<link href="https://fonts.googleapis.com/css?family=Lora|Montserrat:400,700" rel="stylesheet">
 <body>
 
-<nav class="navbar navbar-inverse upper">
-	<div class="navbar-header">
-		<a href="#" class="navbar-brand">FSM</a>
+<nav class="row"> <!-- Hamburger goes here -->
+	<div class="mobile-nav">
+		<h1>KRM Design</h1>
+	     <div class="menu-btn" id="menu-btn">
+			<div class="icon">
+			<i class="fas fa-bars fa-3x"></i>
+			</div>
+	     </div>
+
+	     <div class="responsive-menu">
+	        <ul>
+	           <li>Services</li>
+	           <li>About</li>
+	           <li>Portfolio</li>
+	        </ul>
+	     </div>
 	</div>
 </nav>
 
 
-
-	<div class="row"> 		
-		<header role ="banner">
-			<div class="col-lg-1 logo visible-lg ">
-				<img src="./text90.png" class="img-responsive">
-			</div>
-		</header>
-		<div class="container">
-	
-			<main role="main" class="col-lg-9  col-md-8 col-sm-8 col-xs-7 content">
-				<h1>Full Stack McLeod</h1>
-				<h3>Mobile-first, responsive web-design, handcrafted</h3>
-			</main>
-		</main>
-		<div class="col-lg-1 col-sm-1 col-xs-1 arrow">
-			<a href="./fabout.html"><i class="fas fa-arrow-right fa-10x"></i></a>
-		</div>
+<main>
+	<div class="row">
+		<h2 class="sectionheader">What we Build</h2>
+		<section class ="container col-12" id="#home">
+			<p class="quote">"Best practices 21st century web-design."</p>
+			<p>A successful website generates more than hits: it generates leads, customers, clients, donors.</p>
+			 <p>It does that by initiating a <strong>relationship</strong> between your organization and real people on the other side of the screen who have found you online.</p>
+			 <p>We get the conversation off on the right foot.</p>
+		</section>
 	</div>
-</div>
-		
 	
+	
+	<div class="row">
+		<h2 class="sectionheader">Services</h2>
+		<section class="container col-12">
+			<p>Over half of all website traffic starts on a mobile device, like a cell phone or a tablet, which means that a website that looks professional from the smallest to the largest screens - a great mobile welcome mat for your buisness.</p>
+			<p> Why custom? Your website is as unique as your business.  Whether you need built-in eCommerce, blog functionality, or a static brochure website TKTK</p>
+				<form>
+					<a href="mailto:someone@example.com?Subject=Hi%20Katharine%20-%20let's%20talk%20about%20my%20project!"><button class="contact">Let's Talk!</button></a>
+				</form>
+			<p>We have a special passion for helping small-businesses with too-small budgets and scrappy non-profits who need better websites than they can afford. We want to find a way to work with you.</p>
+		</section>
+	</div>
 
-
-<nav role="navigation" class="navbar navbar-inverse navbar-fixed-bottom">
-
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-       	 			<span class="sr-only">Toggle navigation</span>
-        			<span class="icon-bar"></span>
-       				<span class="icon-bar"></span>
-        			<span class="icon-bar"></span>
-      			</button>
-				<a href="./findex.html" class="navbar-brand">Home</a>
+	
+	<div class="row">
+		<h2 class="sectionheader">About</h2>
+		<section class="col-12 container">
+			<p><strong>Katharine McLeod</strong> is a story-teller, web developer, and Thinkful student (Cohort 20). Whether working on your project solo, or as a part of your existing development team, she brings your project in-depth knowledge of web technologies like HTML5, CSS, Javascript and a customer first focus.  When she's not coding, she's in the kitchen fawning over her InstantPot.</p>
+		</section>
+	</div>
+	<div class="row">
+		<h2 class="sectionheader">Portfolio</h2>
+		<section class="col-12 container">
+			<div class="bna">
+				<img src="https://images.unsplash.com/photo-1518536430288-a540518a0681?ixlib=rb-0.3.5&s=6baf3bf5ce48403beb	400047d9bbf257&auto=format&fit=crop&w=1950&q=80" alt="before">
+				<img src ="https://images.unsplash.com/photo-1519001112248-fbd7b9b8df52?ixlib=rb-0.3.5&s=5adba22fd7a90561b2132548d7c1dcfc&auto=format&fit=crop&w=967&q=80" alt="after">
+				<h6>Caption 1</h6>
 			</div>
-			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-				<ul class="nav navbar-nav navbar-right">
-					<li><a href="./findex.html">Home</a></li>
-					<li><a href="./fabout.html">About</a></li>
-					<li><a href="./fportfolio.html">Portfolio</a></li>
-				</ul>
-			</div>
+		</section>
+	</div>
 
-	</nav>
+<div class="row">
+	<footer class="col-12 sectionheader">
+		<ul class="container">
+			<li><a href="https://github.com/katharinemc/"><i class="fab fa-github-square fa-3x"></i></a></li>
+			<li><a href="https://www.linkedin.com/in/newmankatharine/"><i class="fab fa-linkedin fa-3x"></i></a></li>
+			<li><a href="TKTK">	<i class="fas fa-envelope fa-3x"></i> </a></li>
+		</ul>
+	</footer>
+</div>
 
-	<script
-  src="http://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</main>
+
 </body>
 </html>
