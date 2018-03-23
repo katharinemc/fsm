@@ -20,7 +20,7 @@ font-family: 'Montserrat', sans-serif;
 }
 
 button {
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Pompiere', sans-serif;
 	padding: 5%;
 	border-radius: 15px;
 	border: black;
@@ -28,7 +28,8 @@ button {
 	margin: 5% auto;
 	text-align: center;
 	font-size: 3em;
-	 box-shadow: 2px 5px;
+	 box-shadow: 2px 8px 6px rgba(0,0,0,0.2),
+                 0px -5px 35px rgba(255,255,255,0.3);
 }
 
 .container {
@@ -59,6 +60,9 @@ footer li {
 	padding: .5em;
 	margin-bottom: 5%;
 	margin-top: 3%;
+  border-right: 25px solid;
+  opacity: 0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
 }
 
 
@@ -68,7 +72,7 @@ h1, h2 {
 
 h2 {
 		text-align: right;
-		/*border-top: 1px solid black;*/
+font-family: 'Pompiere', serif;
 }
 hr {
     border: 0;
@@ -91,15 +95,13 @@ img {
 .menu-btn{
 	float: right;
 	display: inline;
-	line-height: 1.2;
-	font-size: 18px;
-	font-weight: 200;
-	vertical-align: middle;
+	font-size: inherit;
+		vertical-align: middle;
 	z-index: 99;
 		padding: 5px;
 	border-radius: 5px;
 	border: 1px solid white;
-		font-size: 1em;		
+
 
 }
 
@@ -224,40 +226,46 @@ p {
   }
 }
 
+
+/*COLORS*/
+
 body {
-  background-color: #DCDCDC;
+  background-color: #F6F5F3;
 }
 
 button {
-  background-color: #A9A9A9;
+  background-color: #948F8C;
 }
 
 button a {
-  color: #DCDCDC;
+  color: #F6F5F3;
+}
+
+button:hover {
+  background-color: #576886;
+  color: #F6F5F3;
 }
 
 footer {
-  background-color: #505050;
+  background-color: #222A3F;
 }
 
 .sectionheader {
-  background-color: #BEBEBE;
-  border-right: 50px solid #A9A9A9;
-  opacity: 0.5;
-    filter: alpha(opacity=50); /* For IE8 and earlier */
+  background-color: #D5E1EF;
+  border-color: #948F8C;
 }
 
 footer li {
-  color: #DCDCDC;
+  color: #F6F5F3;
 }
 
 nav {
-  background-color: #505050;
-  color: #DCDCDC;
+  background-color: #576886;
+  color: #F6F5F3;
 }
 
 footer a {
-  color: #DCDCDC;
+  color: #F6F5F3;
 }
 
 

@@ -26,19 +26,19 @@
 
 </head>
 
-<link href="https://fonts.googleapis.com/css?family=Lora|Montserrat:400,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Pompiere|Lora|Montserrat:400,700" rel="stylesheet">
 <body>
 	<script src="jquery.fancybox.js"></script>
 
 
 
-<nav class="row"> <!-- Hamburger goes here -->
+<nav role = "navigation" class="row"> <!-- Hamburger goes here -->
 	<div class="mobile-nav">
 		<h1>McLeod Web Services</h1>
 	     <div class="menu-btn" id="menu-btn">
-			<div class="icon">
-			<i class="fas fa-bars fa-3x"></i>
-			</div>
+
+			<i class="fas fa-bars "></i>
+		
 	     </div>
 
 	     <div class="responsive-menu">
@@ -52,12 +52,14 @@
 </nav>
 
 
-<main>
+<main role="main">
+	<h2  class="sectionheader" > Welcome</h2>
+
 	<div class="row">
 		
 		
 
-		<section class="col-8 container" id="initial">
+		<section role="region" class="col-8 container" id="initial">
 		
 			<p>A successful website generates more than hits:</p>
 			<p>it generates leads, customers, clients, donors.</p>
@@ -75,14 +77,14 @@
 		
 		<h2  class="sectionheader" >Services</h2>
 	
-		<section class="container col-8">
-				<p>We use best practices to create beautiful, 21<sup>st</sup> century web designs.  All of our designs have a mobile-first focus, ensuring our projects look great from the smallest to the largest screens, and we are attentive to the latest standards in accessibility and search engine optimization.</p>
-				<p> We don't do one-size-fits all templates.  We choose the tools and any needed products for your project, whether you need a static web page, a blog, eCommerce functionality, or some combination of all three.</p>
+		<section role ="region" class="container col-8">
+				<p>  </p>
+				<p> We don't do one-size-fits all templates. We use best practices to create beautiful, 21<sup>st</sup> century web designs. All of our designs have a mobile-first focus, ensuring our projects look great from the smallest to the largest screens, and we are attentive to the latest standards in accessibility and search engine optimization.</p>
 
-				<p>We can help you with any stage of your project, whether that means coding from your wireframe or brainstorming about your initial idea.</p> 
+				<p>We choose the tools and any needed products for your project, whether you need a static web page, a blog, eCommerce functionality, or some combination of all three.  We can help you with any stage of your project, whether that means coding from your wireframe or brainstorming about your initial idea.</p> 
 
-				<form>
-					<a href="mailto:someone@example.com?Subject=Hi%20Katharine%20-%20let's%20talk%20about%20my%20project!"><button class="contact">Let's Talk!</button></a>
+				<form action="mailto:someone@example.com" method="post">
+					<button>Let's Talk!</button></a>
 				</form>
 				<p>Pricing will vary by the size and complexity of your project. Rates start at $350 for a completed web page.</p>
 
@@ -96,7 +98,7 @@
 	
 	<div class="row">
 		<h2 class="sectionheader">About</h2>
-		<section class="col-8 container">
+		<section role="region" class="col-8 container">
 			<p><strong>Katharine McLeod</strong> is a story-teller, web developer, and Thinkful student (Cohort 20). Whether working on your project solo, or as a part of your existing development team, she brings your project in-depth knowledge of web technologies like HTML5, CSS, Javascript and a client-first focus.  When she's not coding, she's in the kitchen fawning over her InstantPot.</p>
 			<hr>
 		</section>
@@ -104,7 +106,11 @@
 	</div>
 	<div class="row">
 		<h2 class="sectionheader">Portfolio</h2>
-		<section class="col-8 container">
+	<section role="region" class="col-8 container">	
+<h3>Coming Soon!</h3>
+<small>(This project built by hand with HTML, CSS, Javascript, JQuery, and some SASS)</small>
+
+		<!-- 
 			<div class="bna">
 				<a href="https://images.unsplash.com/photo-1518536430288-a540518a0681?ixlib=rb-0.3.5&s=6baf3bf5ce48403beb	400047d9bbf257&auto=format&fit=crop&w=1950&q=80" data-fancybox>
 					<img src="https://images.unsplash.com/photo-1518536430288-a540518a0681?ixlib=rb-0.3.5&s=6baf3bf5ce48403beb	400047d9bbf257&auto=format&fit=crop&w=1950&q=80" alt="before">
@@ -113,14 +119,14 @@
 					<img src ="https://images.unsplash.com/photo-1519001112248-fbd7b9b8df52?ixlib=rb-0.3.5&s=5adba22fd7a90561b2132548d7c1dcfc&auto=format&fit=crop&w=967&q=80" alt="after">
 				</a>
 				<h6>Caption 1</h6>
-			</div>
+			</div> -->
 			<hr>
 		</section>
 
 	</div>
 
 
-	<footer class="col-8  row">
+	<footer role="contentinfo" class="col-8  row">
 		<ul>
 			<li><a href="https://github.com/katharinemc/"><i class="fab fa-github-square fa-3x"></i></a></li>
 			<li><a href="https://www.linkedin.com/in/newmankatharine/"><i class="fab fa-linkedin fa-3x"></i></a></li>
