@@ -1,274 +1,207 @@
 * {
-	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+
+  box-sizing: border-box;
+
 }
 
-
-
-#initial {
-	text-align: center;
+html {
+  border: 10px solid red;
+  overflow-x: hidden;
+ margin: 0;
+ padding: 0;
+ width: 100%;
+ height: 100%;
+  font-size: 2vw;
 }
 
-
-a {
-	color: black;
-	text-decoration: none;
-}
 body {
-font-family: 'Montserrat', sans-serif;
-	margin: 0;
-	padding: 0;
+  overflow-x: hidden;
+}
+.abouttext {
+  width: 45%;
 }
 
-button {
-	font-family: 'Pompiere', sans-serif;
-	padding: 5%;
-	border-radius: 15px;
-	border: black;
-	display: block;
-	margin: 5% auto;
-	text-align: center;
-	font-size: 3em;
-	 box-shadow: 2px 8px 6px rgba(0,0,0,0.2),
-                 0px -5px 35px rgba(255,255,255,0.3);
+.about {
+  margin: auto 15%;
+  padding: 10% 0;
 }
 
+body {
+  margin: 0 0;
+  font-family: 'Raleway', sans-serif;
+ }
+
+.buttonholder {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-evenly;
+  margin-top: 3%;
+}
+
+.consult {
+margin: 3% auto;
+  padding: 1%;
+}
+
+.resources {
+display: flex;
+flex-flow: column;
+}
 .container {
-	margin-top: 2%;
-
-
+display: flex;
+flex-flow: column nowrap;
 }
+
+.row {
+  display: flex;
+flex-flow: row nowrap;
+justify-content:  space-around;
+}
+
 
 footer {
 	text-align: center;
 }
 
-footer ul {
-
-}
-
 footer li {
 	display: inline;
-
 	 list-style-type: none;
 	 margin: 5%;
 }
 
-
-
-.sectionheader {
-	font-style: italic;
-	padding: .5em;
-	margin-bottom: 5%;
-	margin-top: 3%;
-  border-right: 25px solid;
-  opacity: 0.5;
-    filter: alpha(opacity=50); /* For IE8 and earlier */
-}
-
-
-h1, h2 {
-	font-family: 'Lora', serif;
-}
-
-h2 {
-		text-align: right;
-font-family: 'Pompiere', serif;
-}
-hr {
-    border: 0;
-    height: 1px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
-}
-
-img {
-	width: 49%;
-	min-height: 100%;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-    display: inline;
-}
-
-
-/*HAMBURGER CODE*/
-
-.menu-btn{
-	float: right;
-	display: inline;
-	font-size: inherit;
-		vertical-align: middle;
-	z-index: 99;
-		padding: 5px;
-	border-radius: 5px;
-	border: 1px solid white;
-
-
-}
-
-nav {
-	padding: 1%;
-	margin: 0;
-	min-width: 100%;
-
-}
-
-nav ul {
-
-  list-style-type: none;
-
-}
-
-nav h1 {	display: inline;
-
-}
-
-
-p {
-	margin: 3px, auto;
-}
-.responsive-menu{
-	display: none;
-}
-
-.expand {
-	display: block !important; 
-}
-
-
-
-
-
-/*HERE BEGINS GRID CSS*/
-/* Grid measurements:
- *
- *   960px wide including 12 gutters (half gutters on both edges)
- *
- *   60px columns (12)
- *   20px gutters (two half-gutters + 11 full gutters, so 12 total)
- *
- *
- *   For smaller screens, we always want 20px of padding on either side,
- *   so 960 + 20 + 20 => 1000px
- *
- **/
-.row {
-  max-width: 1000px;
-  	min-width: 100%;
- /* padding-left: 20px;
-  padding-right: 20px;*/
-  margin: 0% auto;
-}
-
-/* Clearfix */
-.row::before,
-.row::after {
-  display: table;
-  content: '';
-}
-
-.row::after {
-  clear: both;
-}
-
-.col-3, .col-4, .col-6, .col-12 {
-  float: left;
-
-  /* Gutters:
-   * Each column is padded by half-a-gutter on each side,
-   *
-   * Half a gutter is 10px, 10/960 (context) = 1.041666%
-   *
-   */
-  padding-left: 1.04166666%;
-  padding-right: 1.04166666%;
-}
-
-/* Mobile defaults */
-@media only screen and (max-width: 639px){
-	.col-3, .col-4, .col-6, .col-8, .col-12 {
-		width: 100%;
-			padding: 0 5%;
-
-	}
-
-
-
-}
-
-
-
-
-
-/* Non-mobile, grid */
-@media only screen and (min-width: 640px) {
-  /* 3 columns, 3/12 in % */
-  .col-3 {
-    width: 25%;
-  }
-
-  /* 4 columns */
-  .col-4 {
-  	width: 33%;
-  }
-
-  /* 6 columns */
- 
-
-  .col-8 {
-  	width: 50%;
-  	margin: 0 auto;
-  }
-
-
-  /* 12 columns */
-  .col-12 {
-  	width: 100%;
-  }
-}
-
-
-/*COLORS*/
-
-body {
-  background-color: #F6F5F3;
-}
-
-button {
-  background-color: #948F8C;
-}
-
-button a {
-  color: #F6F5F3;
-}
-
-button:hover {
-  background-color: #576886;
-  color: #F6F5F3;
-}
-
-footer {
-  background-color: #222A3F;
+section h2 {
+  display: inline-block;
+  font-size: 1.5em;
+  font-family: 'Passion One', cursive;
 }
 
 .sectionheader {
-  background-color: #D5E1EF;
-  border-color: #948F8C;
+  font-size: 2em;
+  font-family: 'Passion One', cursive;
 }
 
-footer li {
-  color: #F6F5F3;
+header {
+  display: flex;
+  background-image: url(/images/largebrellas.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  font-size: 2em;
 }
 
-nav {
-  background-color: #576886;
-  color: #F6F5F3;
+header h1 {
+  font-size: 1.5em;
+  font-family: 'Passion One', cursive;
 }
 
-footer a {
-  color: #F6F5F3;
+ button {
+  margin: 5%;
+  padding: 5% 15%;
+  font-size: 32px;
+  border: 2px solid #d31e00;
+  background-color: transparent;
+  box-shadow: 2px 8px 6px rgba(0,0,0,0.2),
+  0px -5px 35px rgba(255,255,255,0.3);
 }
 
+ button:hover {
+  background-color: #d31e00;
+}
+
+header .herotext {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+ margin: 20% auto;
+}
+
+.quadbox {
+  display: flex;
+  flex-flow: column;
+  width: 50%;
+  line-height: 1.5em;
+  padding: 2%;
+}
+
+.quadresource {
+  margin: auto auto;
+  width: 50%;
+  line-height: 1.5em;
+  padding: 2%;
+  display: flex;
+ flex-direction: column;
+  justify-content:  space-evenly;
+}
+
+.quadresource p {
+  margin-top: auto;
+
+}
+
+main {
+  display: flex;
+  flex-flow: column;
+  background: rgb(20,113,194);
+  margin: 0;
+  background: linear-gradient(0deg, rgba(137,183,217,1) 0%, rgba(20,113,194,1)  100%);
+}
+
+section {
+  margin: auto;
+  width: 100vw;
+  height: 120vh;
+
+   }
+
+
+  img {
+    /* width: 35%; */
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 767px) {
+  html {
+    font-size: 4vw;
+  }
+  section {
+    margin: 0;
+    width: 100%;
+    background-color: orange;
+    height: 120vh;
+    padding: 15% 0;
+    font-size: .75em;
+    
+    }
+
+    .text {
+      background-color: pink;
+      width: 25%;
+      margin: 0 5%;
+    }
+  .abouttext {
+    width: 75%;
+  }
+
+
+  .about {
+    margin: auto 3%;
+    padding: 3%;
+      } 
 
 
 
+/* #1471C2; is color or bottom hero image */
 
+/* 
+#5087c474.2 %Havelock Blue (Blue)
+#d31e0022.2 %Harley Davidson Orange (Orange)
+#861108 Falu Red (Red)
+#b01a071.3 %Fire Brick (Red)
+#695c84 */
