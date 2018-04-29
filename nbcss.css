@@ -101,7 +101,7 @@ section h2 {
 
 header {
   display: flex;
-  background-image: url(https://imgur.com/GFKSjAT);
+  background-image: url("https://imgur.com/GFKSjAT");
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
