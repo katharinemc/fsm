@@ -198,8 +198,8 @@ section {
 } 
 
 .about {
+  background-color: orange;
   margin: 3% 0;
-
   padding: 3%;
     } 
 
@@ -212,7 +212,7 @@ section {
 
 @media only screen and (max-width: 767px) {
   html {
-    font-size: 2vw;
+    font-size: 3vw;
   }
   section {
     margin: 0;
@@ -225,14 +225,20 @@ section {
 header{
      font-size: 1.5em;
 }
-    .text {
-      background-color: pink;
-      width: 25%;
-      margin: 0 5%;
-    }
+
+
   .abouttext {
-    width: 75%;
+    width: 100%;
+    /* background-color: purple; */
   }
+
+.servicestext {
+  width: 100%;
+}
+
+p {
+  margin-bottom: 3%;
+}
 
 
   .about {
