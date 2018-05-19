@@ -2,14 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
 }
 
 html {
-  /* overflow-x: hidden; */
  margin: 0;
  padding: 0;
- /* width: 100vh; */
  height: 100%;
   font-size: 45px;
 }
@@ -31,7 +28,6 @@ a {
 body {
   margin: 0 0;
   font-family: 'Raleway', sans-serif;
-  /* overflow-x: hidden; */
   overflow-y: scroll;
  }
 
@@ -71,6 +67,10 @@ footer li {
 
 footer a {
   color: white;
+}
+
+.github a {
+  text-decoration: underline;
 }
 
 .portfolio ul {
@@ -137,17 +137,16 @@ justify-content: center;
 }
 
 .projectcontainer {
+  margin-bottom: 10%;
   display: flex;
   flex-direction: column;
   padding: 1%;
   flex: 1 0 auto;
-  /* border: 5px solid orange; */
-
 }
 
 .thumbnail {
 max-width: 100%;
-  |  flex-direction: column;
+flex-direction: column;
   border: solid 5px gray;
 }
 
@@ -163,6 +162,7 @@ max-width: 100%;
 main {
   height: 100%;
   display: flex;
+  flex-wrap: wrap;
   flex-flow: column;
   background: rgb(20,113,194);
   background: linear-gradient(0deg, rgba(137,183,217,1) 0%, rgba(20,113,194,1)  100%);
@@ -188,8 +188,12 @@ p{
   flex-direction: column;
 }
 
+.portfolioheader {
+  margin-right: 5%;
+  text-align: right;
+}
+
 .portfolioimage {
-  /* margin-left: 3%; */
   display: flex;
   flex: 0 2 auto;
   height: 100%;
@@ -227,7 +231,7 @@ section button {
 
 section {
   margin: auto;
-  height: 120vh;
+  min-height: 100vh;
   display: flex;
 flex-flow: column nowrap;
 
@@ -266,75 +270,26 @@ margin:0  auto;
 
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
 
- @media only screen and (max-width: 600px) {
-
-header{    
-    font-size: 3em;
-} 
-
-section {
- 
-  font-size: 2.5em;
-} 
-
-.about {
-  background-color: orange;
-  margin: 3% 0;
-  padding: 3%;
-    } 
-
-    .abouttext {
-      width: 100%;
-    }
-
- } 
- 
-
-@media only screen and (max-width: 767px) {
-  html {
-    font-size: 3vw;
-  }
-  section {
-    margin: 0;
-    width: 100%;
-    height: 120vh;
-    padding: 15% 0;
-    font-size: 1.5em;
-        }
-        
-header{
-     font-size: 1.5em;
+@media screen 
+  and (min-device-width: 1200px) 
+{ 
+.buttonholder {
+  margin-top: 3%;
 }
 
-.imgbefore {
-  width: 100%;
+.projectcontainer {
+  min-height: 50vh;
+  margin-bottom: 5%;
 }
 
-.imgafter{
-  width: 100%;
-}
+.portfoliorow{
+  margin-left: 2%;
+  margin-right: 2%;
 
-  .abouttext {
-    width: 100%;
-    /* background-color: purple; */
+}
   }
 
-.servicestext {
-  width: 100%;
-}
-
-p {
-  margin-bottom: 3%;
-}
-
-
-  .about {
-    margin: 0;
-    padding: 3%;
-      } 
-    }
 
 
 /* #1471C2; is color or bottom hero image */
