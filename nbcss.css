@@ -184,6 +184,7 @@ p{
 .portfoliodescription {
   margin-left: 1%;
   display: flex;
+  justify-content: center;
   flex: 1 1 0;
   flex-direction: column;
 }
@@ -197,7 +198,7 @@ p{
   display: flex;
   flex: 0 2 auto;
   height: 100%;
-  max-width: 100%;
+  max-width: 50%;
   flex-direction: column;
   justify-content: center;
 }
@@ -234,7 +235,6 @@ section {
   min-height: 100vh;
   display: flex;
 flex-flow: column nowrap;
-
    }
 
    section:last-of-type {
@@ -300,3 +300,18 @@ margin:0  auto;
 #861108 Falu Red (Red)
 #b01a00 71.3 %Fire Brick (Red)
 #695c84 */
+
+img.food {
+  FLOAT: RIGHT;
+  MAX-WIDTH: 100%;
+}
+
+.foodimage {
+  border: 10px solid gray;
+
+  display: flex;
+  flex: 0 2 auto;
+  max-width: 25%;
+  flex-direction: column;
+  justify-content: center;
+}
