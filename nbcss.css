@@ -18,10 +18,16 @@ a {
 
 
 .about {
-width: 75%;
 margin: auto;
   padding: 10% 0;
+  margin-bottom: 15%;
 }
+
+.about p {
+  margin-bottom: 3%;
+}
+
+
 
 body {
 
@@ -52,25 +58,26 @@ margin: 3% auto;
 footer {
  display: flex;
   height: 15%;
-  background-color: #d31e00;;
+  background-color: #5A5A5A;
   text-align: center;
   justify-content: center;
 }
 
 footer ul {
+  width: 80%;
   text-align: center;
   width: 100%;
 }
 
 footer li {
   margin: 0 5%;
-  color: white;
+  color: #E89005;
 	display: inline;
 	 list-style-type: none;
 }
 
 footer a {
-  color: white;
+  color: #E89005;
 }
 
 .github {
@@ -115,14 +122,15 @@ header button {
   margin: 5%;
   padding: 5% 15%;
   font-size: 1em;
-  border: 2px solid #d31e00;
-  background-color: transparent;
-  box-shadow: 2px 8px 6px rgba(0,0,0,0.2),
-  0px -5px 35px rgba(255,255,255,0.3);
+  color: white;
+  border: 2px solid #E89005;
+  background-color: #5a5a5a;
+  box-shadow: 2px 8px 6px rgba(0,0,0,0.2), 0px -5px 35px rgba(255,255,255,0.3);
 }
 
  button:hover {
-  background-color: #d31e00;
+  background-color: #E89005;
+  color: black;
 }
 
 header .herotext {
@@ -155,6 +163,8 @@ justify-content: center;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding-bottom: 1.5%;
+  margin-bottom: 2%;
   border-bottom: 2px solid black;
 }
 
@@ -225,6 +235,15 @@ flex-direction: column;
   justify-content: center;
 }
 
+.foodrow {
+  flex: 1 0 auto;
+  flex-wrap: wrap;
+  display: flex;
+  padding-bottom: 1%;
+  justify-content: center;
+
+}
+
 main {
   height: 100%;
   display: flex;
@@ -292,21 +311,23 @@ section h2 {
 section {
   margin: auto;
   min-height: 100vh;
+  width: 80%;
+  margin-bottom: 10%;
   display: flex;
 flex-flow: column nowrap;
    }
 
    section:last-of-type {
-   margin-bottom: 25%;
+   margin-bottom: 15%;
 }
 
 .resume {
-  width: 100%;
+  font-size: .9em;
   padding: 5%;
 }
 
 .resumelink {
-  text-decoration: italic;
+  text-decoration: underline;
   text-align: right;
   display: inline-block;
 }
@@ -318,7 +339,10 @@ flex-flow: column nowrap;
 
 .resumetext {
   display: inline-block;
+}
 
+.resume li {
+  margin-bottom: 2%;
 }
 
 
@@ -381,6 +405,10 @@ img.food {
   MAX-WIDTH: 50%;
 }
 
+.portfolio {
+  max-width: 90%;
+}
+
 .portfolioimage {
   max-width: 50%;
   flex-direction: row;
@@ -392,6 +420,19 @@ img.food {
   justify-content: center;
   flex: 1 1 45%;
   flex-direction: column;
+}
+
+.resume li {
+  margin-bottom: .5%;
+}
+
+.jobheading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: .5%;
+  margin-bottom: 1%;
+  border-bottom: 2px solid black;
 }
 
   }
