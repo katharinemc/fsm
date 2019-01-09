@@ -8,59 +8,26 @@ html {
  margin: 0;
  padding: 0;
  height: 100%;
-  font-size: 30px;
+ font-size: 30px;
 }
 
 a {
-  text-decoration: none;
   color: black;
 }
-
-
-.about {
-margin: auto;
-  padding: 10% 0;
-  margin-bottom: 15%;
-}
-
-.about p {
-  margin-bottom: 3%;
-}
-
-
-
 body {
-
   margin: 0 0;
   font-family: 'Raleway', sans-serif;
   overflow-y: scroll;
  }
 
-.buttonholder {
-  margin-top: 15%;
-  font-size: .75em;
-  display: flex;
-  flex-flow: row;
-  flex: 0 1 0;
-  justify-content: space-evenly;
-
-}
-
-.consult {
-margin: 3% auto;
-  padding: 1%;
-}
-
-.education {
-  margin-top: 5%;
-}
 
 footer {
- display: flex;
-  height: 15%;
   background-color: #5A5A5A;
   text-align: center;
   justify-content: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 footer ul {
@@ -81,167 +48,46 @@ footer a {
 }
 
 .github {
+  margin-top: 1.5%;
   display: block;
+  font-size: 20px;
 }
-
-.github a {
-  text-decoration: underline;
-}
-
-.portfolio ul {
-  margin-top: 5%;
-width: 100%;
-  text-align: center;
-}
-
-.portfoliolinks li{
-  display: inline;
-  list-style-type: none;
-  margin: 0 5%;
-}
-
-
 
 header {
-  display: flex;
   background-image: url("https://i.imgur.com/GFKSjAT.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
-  height: 100vh;
-  font-size: 2em;
+  height: 95vh;
+  padding: 3% 0 0 5%;
 }
 
-header h1 {
-  font-size: 2em;
+ .headerTxt {
+  font-size: 60px;
 }
 
-
-header button {
-  margin: 5%;
-  padding: 5% 15%;
-  font-size: 1em;
-  color: white;
-  border: 2px solid #E89005;
-  background-color: #5a5a5a;
-  box-shadow: 2px 8px 6px rgba(0,0,0,0.2), 0px -5px 35px rgba(255,255,255,0.3);
+.headerTxt p {
+  line-height: 45px;
 }
 
- button:hover {
-  background-color: #E89005;
-  color: black;
+.first {
+  width: 60%;
 }
 
-header .herotext {
-  font-size: .75em;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  justify-content: center;
+.second {
+  width: 70%;
 }
- .hidden {
-  display: none;
-} 
 
-.hint {
-  text-decoration: underline;
+.third {
+  margin-left: 25%;
+  width: 60%;
 }
 
 .imgbox1 {
   width: 50%;
 display: flex;
 justify-content: center;
-}
-
-
-.jobdescription {
-  padding-left: 3%;
-}
-.jobheading {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding-bottom: 1.5%;
-  margin-bottom: 2%;
-  border-bottom: 2px solid black;
-}
-
-.educationitem {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-bottom: 1%;
- 
-}
-
-.jobitem {
-  margin-left: 2%;
-  margin-top: 3%;
-}
-
-.jobitemfirst{
-  margin-left: 2%;
-  margin-top: 1%;
-}
-
-.skills {
-  margin-left: 2%;
-}
-.jobtitle {
-  display: flex;
-  flex: 1 0 40%;
-  flex-direction: column;
-}
-
-
-.jobtitle h3 {
-  margin: 0;
-}
-.joblocation{
-  flex: 1 0 30%;
-  text-align: center;
-}
-
-
-.jobtime{
-  flex: 1 0 30%;
-text-align: right;
-
-}
-
-.projectcontainer {
-  margin-bottom: 10%;
-  display: flex;
-  flex-direction: column;
-  padding: 1%;
-  flex: 1 0 auto;
-}
-
-.thumbnail {
-max-width: 100%;
-margin: 0 auto;
-flex-direction: column;
-  border: solid 5px gray;
-}
-
-
-.portfoliorow {
-  flex: 1 0 auto;
-  flex-wrap: wrap;
-  display: flex;
-  padding-bottom: 1%;
-  justify-content: center;
-}
-
-.foodrow {
-  flex: 1 0 auto;
-  flex-wrap: wrap;
-  display: flex;
-  padding-bottom: 1%;
-  justify-content: center;
-
 }
 
 main {
@@ -253,31 +99,34 @@ main {
   background: linear-gradient(0deg, rgba(137,183,217,1) 0%, rgba(20,113,194,1)  100%);
 }
 
-p{
-  margin-bottom: 5%;
-}
- 
-.portfolio h3 {
-  font-size: 2em;
+p:nth-of-type(1){
+  margin-bottom: 2%;
+  font-size: inherit;
 }
 
-.portfolio h4 {
-  font-style: oblique;
+p {
+  font-size: 30px;
+  margin-bottom: 30px;
 }
+
+h3 {
+  margin-bottom: .75%;
+}
+
+h4 {
+  font-style: oblique;
+  margin-bottom: .75%;
+}
+
 
 .portfoliodescription {
-  margin-left: 1%;
   display: flex;
-  justify-content: center;
+  justify-content: start;
   flex: 1 1 100%;
   flex-direction: column;
-}
-
-.fooddescription {
-  display: flex;
-  justify-content: center;
-  flex: 1 1 0;
-  flex-direction: column;
+  max-width: 50%;
+  font-size: 20px;
+  line-height: 30px;
 }
 
 .portfolioheader {
@@ -286,26 +135,25 @@ p{
 }
 
 .portfolioimage {
-  display: flex;
-  flex: 0 2 auto;
-  height: 100%;
-  max-width: 100%;
+  max-width: 50%;
   flex-direction: row;
   justify-content: center;
-}
-  
-.projectdescription p {
-  text-align: justify;
+  margin-right: 3%;
 }
 
-.projectdescription ul {
-  margin-top: 3%;
+.portfoliorow {
+  display: flex;
+  max-height: 30%;
+  font-size: 26px;
+  width: 95%;
+  margin: 3% 0 1% 0;
 }
 
 
-section h2 {
-  display: inline-block;
-  font-size: 2.5em;
+.projectcontainer {
+  display: flex;
+  flex: 1 0 auto;
+  width: 50%;
 }
 
 section {
@@ -314,50 +162,20 @@ section {
   width: 80%;
   margin-bottom: 10%;
   display: flex;
-flex-flow: column nowrap;
+flex-flow: co0lumn nowrap;
    }
 
    section:last-of-type {
    margin-bottom: 15%;
 }
 
-.resume {
-  font-size: .9em;
-  padding: 5%;
-}
-
-.resumelink {
-  text-decoration: underline;
-  text-align: right;
-  display: inline-block;
-}
-
-.resumeheader {
- display: inline-block;
- text-align: right;
-}
-
-.resumetext {
-  display: inline-block;
-}
-
-.resume li {
-  margin-bottom: 2%;
-}
-
-
-  .rightimg {
-    border: 5px solid black;
-    width: 25%;
-    height: auto;
-    float: right;
-    display: inline-block;
-
-}
-
-
-
-
+.thumbnail {
+  max-width: 100%;
+  max-height: 150px;
+  margin: 0 auto;
+  flex-direction: column;
+    border: solid 5px gray;
+  }
 
 /* #1471C2; is color or bottom hero image */
 
@@ -368,19 +186,6 @@ flex-flow: column nowrap;
 #b01a00 71.3 %Fire Brick (Red)
 #695c84 */
 
-img.food {
-  FLOAT: RIGHT;
-  MAX-WIDTH: 100%;
-}
-
-.foodimage {
-  margin-left: 3%;
-  display: flex;
-  flex: 0 2 auto;
-  max-width: 40%;
-  flex-direction: column;
-  justify-content: space-around;
-}
 
 @media screen 
   and (min-device-width: 1200px) 
@@ -389,50 +194,19 @@ img.food {
   margin-top: 3%;
 }
 
-.projectcontainer {
-  min-height: 50vh;
-  margin-bottom: 5%;
-}
-
-.portfoliorow{
-  margin-left: 2%;
-  margin-right: 2%;
-}
-
-img.food {
-  FLOAT: RIGHT;
-  margin: 0 auto;
-  MAX-WIDTH: 50%;
-}
-
 .portfolio {
   max-width: 90%;
 }
 
 .portfolioimage {
-  max-width: 50%;
   flex-direction: row;
   justify-content: center;
 }
 .portfoliodescription {
-  margin-left: 1%;
   display: flex;
-  justify-content: center;
-  flex: 1 1 45%;
+  flex: 1 1 25%;
   flex-direction: column;
 }
 
-.resume li {
-  margin-bottom: .5%;
-}
-
-.jobheading {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding-bottom: .5%;
-  margin-bottom: 1%;
-  border-bottom: 2px solid black;
-}
 
   }
